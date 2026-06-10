@@ -1,0 +1,36 @@
+.product-submenu {
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    list-style: none;
+    text-align: start;
+    border: 2px solid #8b4513;
+    border-radius: 8px;
+    background-color: rgba(44, 19, 11, 0.95);
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    padding: 0.5rem 0;
+  }
+
+.product-submenu.clicked {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+.submenu-item {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+    transition: background-color 0.3s ease;
+    min-width: fit-content;
+    margin: 0;
+}
+
+.submenu-item:hover {
+    background-color: rgba(210, 105, 30, 0.2);
+    color: #ffe4b5;
+    cursor: pointer;
+}
